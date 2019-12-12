@@ -107,9 +107,8 @@ list-style: none;
 
 
 #main-header a img {
-  margin-top: 3rem;
-  width: 75px;
-  height: 75px;
+  margin-top: 0rem;
+  width: 15rem;
   margin-left: 4rem
 }
 
@@ -140,14 +139,9 @@ padding-left: 2rem;
 
 #persid {
 padding-top: 6rem;
-
 font-size: 2rem;
-
 margin-left: auto;
-
-background-color:
-green;
-
+background-color:green;
 border-radius: 0rem 0rem 4rem 0rem;
 }
 
@@ -632,8 +626,31 @@ text-decoration: none;
 
   /* 404 PAGE 404 */
 
+#page_404 {
+margin-top: 5rem;
+margin-bottom: 5rem;
+}
 
-.page_404 img_404 {
+
+#page_404 img {
   display: block;
   margin-left: auto;
-  margin-right: auto 
+  margin-right: auto;
+    
+}
+
+  /* page interdit */
+
+#interdit_accueil {
+margin-top: 5rem;
+margin-bottom: 5rem;
+}
+
+
+#interdit_accueil img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+    
+}
+

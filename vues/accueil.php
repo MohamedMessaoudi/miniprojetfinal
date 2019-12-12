@@ -74,7 +74,7 @@ if(!isset($_SESSION["id"]))
             echo "<label for='titre'><b>Votre sujet :</b></label>";
             echo "<input type = 'text' name = 'titre' placeholder='Titre'></br></br>";
             echo "<label for='contenu'><b>Votre message :</b></label>";
-            echo "<input type = 'text' name = 'contenu' placeholder='Message' style='height: 22rem;'>";
+            echo "<input type = 'text' name = 'contenu' placeholder='Message' style='height: 12rem;'>";
             echo "<button type='submit' name='poster' style='/*! padding-left: 15rem; */width: 13%;border-radius: 3rem;'>Poster</button>";
            // echo "</div>";
             echo "</form></br>";
@@ -91,13 +91,19 @@ if(!isset($_SESSION["id"]))
             $query->execute(array($id)); // Etape 2 :On l'exécute. 
                                                 // On remplace le ? par l'année donnée 
 	
+            $line = $query->fetch();
+            
+                  echo "<p><strong>Mur de ";
+                echo $line['idAmi'] ;
+                
+                echo "</strong></p>";
+                
 	
             while($line = $query->fetch()) 
             
             { 
                 
-                echo "<p><strong>Vos publications...</strong></p>";
-                
+          
                 
                 // Etape 3 : on parcours le résultat
                 echo "<div class='post'>";

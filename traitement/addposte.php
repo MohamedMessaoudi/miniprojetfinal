@@ -12,6 +12,7 @@ $sql= "INSERT INTO ecrit (titre, contenu, dateEcrit, idAuteur, idAmi) VALUES (?,
 
 header('Location: index.php?action=accueil');
              }else{
-    echo "champs vides";
+    header('Location: index.php?action=accueil');
+     message("Veuillez entrez tout les champs !!");
 }
 echo "</div>";

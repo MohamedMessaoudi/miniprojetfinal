@@ -63,7 +63,7 @@ if (isset($_SESSION['info'])) {
 
         
 
-        <a href="index.php?action=accueil"><img src="../miniprojet/img/ima.png"></a>
+        <a href="index.php?action=accueil"><img src="img/ima.png"></a>
          <?php
         if (isset($_SESSION['id'])) {
           
